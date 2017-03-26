@@ -1,0 +1,290 @@
+h1, h2, h3, h4, h5, h6, p, b, em {text-shadow:none !important;}
+.ui-page-theme-a .ui-bar-inherit {text-shadow:none !important;}
+.ui-page-theme-a {background-color: #fff;}
+body {font-family: 'Raleway', sans-serif; }
+h1 {font-size: 18px;}
+h2 {font-size: 16px;}
+h3 {font-size: 14px;}
+ul {
+    margin: 0 !important;
+}
+p, li, .tab-content {font-size: 14px; color: #333;}
+/*.ui-page-theme-a .ui-btn { color:#597147 !important;}*/
+.ui-page-theme-a .ui-btn.ui-btn-active { color:#fff !important;}
+/*.ui-page-theme-a .ui-btn { background-color: #e6e6e6; border:none;}*/
+#header { background-color: #1f4c59;  height: 55px; padding: 0 !important;}
+h1 {color: #fff; font-weight: bold; line-height: 55px; padding: 0 !important;}
+.ui-page-theme-a .ui-btn.ui-btn-active {background-color: #597147;}
+#contenitore-home {background-image: url(../img/castelpagano.jpg); background-size: contain;background-repeat: no-repeat; height: 170px;}
+.titolo, li {color:#597147;}
+.logo {width: 80px; margin: 0 auto; display: block;}
+.media {padding: 3px 20px; margin-bottom: 3px; background-color:#f6f6f6;}
+#titolopagine {font-weight: bold; color: #597147;}
+#categoria {font-weight: bold; text-transform: uppercase;}
+.navbar {font-weight: 700 !important;}
+iframe {border:none;}
+#back-contatti {background-image: url(../img/background-bottom.jpg); background-size: contain;background-repeat: no-repeat; background-position: bottom center; height: 100vh;}
+/*#content-home {background-image: url(../img/background-bottom.jpg); background-size: contain;background-repeat: no-repeat; background-position: bottom center;}*/
+.list-group-item:first-child, .list-group-item:last-child {border-radius: 0px;}
+.list-group-item {border-left: none; border-right: none;}
+.list-group {box-shadow: none; }
+.ui-page-theme-a a {color:#333 !important; }
+.banner-contatti {width: 100%; background-color: #ff5954; padding-bottom: 20px;}
+.active-f {background-color: #1f4c59 !important;}
+#footer {background-color: #f6f6f6 !important; border-top:none; -webkit-box-shadow: 0 -1px 1px 0 #cdc8c8;
+         box-shadow: 0 -1px 1px 0 #cdc8c8;}
+#footer .ui-btn {border:none;}
+.evidenza {   
+    margin-bottom: 5px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    -webkit-box-shadow: 0 0 2px 2px #ccc;
+    box-shadow: 0 0 2px 2px #ccc;
+    height: 250px;
+}
+.contenuti {
+    margin-top: 175px;
+}
+.evidenza img {width: 40px;}
+#testo, #icona {height: 50px;}
+#icona a {line-height: 50px;}
+#testo h2 {font-weight: bold; padding:0; margin: 0;  color: #597147;}
+#testo h3 {padding:0; margin: 0;}
+#testo {padding: 0 !important;}
+
+.copertina { background-size: contain; background-repeat: no-repeat;}
+.profilo {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 100%;
+    padding: 10px 0;
+    background-color: white;
+    -webkit-box-shadow: 0 2px 2px #597147;
+    box-shadow: 0 2px 2px #597147;
+
+    background-position: center center;
+}
+.profilo img {
+    width: 40%;
+    margin: 0 auto;
+    display: block;
+}
+.informazioni {
+
+    margin-top: 20px;
+}
+.info-dettagli {
+    height: 40px;
+    line-height: 40px;
+    background-color:#1f4c59;
+    margin-bottom: 10px;
+}
+.info-dettagli p {
+    color: #fff;
+}
+section.container {padding: 0 !important; margin-bottom: 20px;}
+.box {margin-bottom: 1px !important;}
+.info-dettagli b {margin-right:10px;}
+.icona-preferito {
+    margin: 0 80%;
+    display: block;
+    border-radius: 30px;
+    margin-top: -20px;
+    background-color: white;
+}
+#caricatore {
+    width: 100% !important;
+    margin-top: 50% !important;
+}
+.ui-loader {
+    display: none;
+}
+.ui-loader-verbose {
+    margin: 0 !important;
+    width: 100% !important;
+    background-color: white !important;
+    height: 100%;
+}
+.ui-loader {
+    top:0 !important;
+    left:0 !important;
+}
+.ui-loader-fakefix {
+    display: none !important;
+}
+
+/* Set the background image sources */
+#newyork { background-image: url(../img/castelpagano.jpg); }
+#buenosaires { background-image: url(../img/castelpagano.jpg); }
+#paris { background-image: url(../img/castelpagano.jpg); }
+#capetown { background-image: url(../img/castelpagano.jpg); }
+#seoul { background-image: url(../img/castelpagano.jpg); }
+#sydney { background-image: url(../img/castelpagano.jpg); }
+/* Background settings */
+.demo-page {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+/* Transparent footer */
+.demo-page .ui-footer {
+    background: none;
+    border: none;
+    bottom: 0;
+}
+/* The footer won't have a height because there are only two absolute positioned elements in it.
+So we position the buttons from the bottom. */
+.control.ui-btn-left, .trivia-btn.ui-btn-right {
+    top: auto;
+    bottom: 7px;
+    margin: 0;
+}
+/* Custom styling for the trivia source */
+small {
+    font-size: .75em;
+    color: #666;
+}
+/* Prevent text selection while swiping with mouse */
+.demo-page .ui-header, .ui-title, .control .ui-btn, .trivia-btn {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+.ui-overlay-a {
+    background-color: #fff !important;
+}
+.list-group-item {
+    padding: 20px 15px !important;
+}
+.box-image {
+    -webkit-box-shadow: 0 2px 2px 0 #ccc;
+    box-shadow: 0 2px 2px 0 #ccc;
+    margin-bottom: 15px;
+    background-position: center center;
+    /*background-image: url(../img/background-bottom.jpg);*/
+    padding: 160px 0 0 0;
+    height: 230px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box-categoria {
+    color: #fff;
+    padding: 0 0 0 15px;
+    margin: 0 !important;
+    background-color: #1f4c59;
+    height: 20px;
+    line-height: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+.box-categoria-itinerari, .info-dettagli-itinerari {
+    background-color: #00b39f;
+}
+.box-categoria-ospitalita, .info-dettagli-ospitalita {
+    background-color: #ff5954;
+}
+.box-categoria-ristoro, .info-dettagli-ristoro{
+    background-color: #ffb060;
+}
+.box-titolo {
+    background-color: rgba(255, 255, 255,0.95);
+    height: 50px;
+}
+.box-titolo h1 {
+    line-height: 10px;
+    padding:0; 
+    color:#333;
+}
+.box-titolo a {
+    line-height: 50px; 
+    float: right;
+}
+.box-titolo img {
+    margin-top: -50px;
+    background-color: #fff;
+    border-radius: 60px;
+}
+
+
+#mySwipe div b {
+    display:block;
+    font-weight:bold;
+    color:#14ADE5;
+    font-size:20px;
+    text-align:center;
+    margin:10px;
+    padding:100px 10px;
+    box-shadow: 0 1px #EBEBEB;
+    background: #fff;
+    border-radius: 3px;
+    border: 1px solid;
+    border-color: #E5E5E5 #D3D3D3 #B9C1C6;
+}
+
+.swipe {
+    overflow: hidden;
+    visibility: hidden;
+    position: relative;
+}
+.swipe-wrap {
+    overflow: hidden;
+    position: relative;
+}
+.swipe-wrap > div {
+    float:left;
+    width: 20px;
+    position: relative;
+}
+.icona-delete {
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+}
+.media {
+    -webkit-box-shadow: 0 1px 1px 1px #1f4c59;
+    box-shadow: 0 1px 1px 1px #1f4c59;
+    background-color: white;
+}
+
+.nav-tabs { border-bottom: 2px solid #DDD; }
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover { border-width: 0; }
+.nav-tabs > li > a { border: none; color: #666; }
+.nav-tabs > li.active > a, .nav-tabs > li > a:hover { border: none;     color: #1f4c59 !important; background: transparent; }
+.nav-tabs > li > a::after { content: ""; background: #1f4c59; height: 2px; position: absolute; width: 100%; left: 0px; bottom: -1px; transition: all 250ms ease 0s; transform: scale(0); }
+.nav-tabs > li.active > a::after, .nav-tabs > li:hover > a::after { transform: scale(1); }
+.tab-nav > li > a::after { background: #21527d none repeat scroll 0% 0%; color: #fff; }
+.tab-pane { padding: 15px 0; }
+.tab-content{padding:20px}
+
+.card {background: #FFF none repeat scroll 0% 0%; }
+.nav-tabs>li {
+    float: left;
+    width: 50%;
+    margin-bottom: -1px;
+    text-align: -webkit-center;
+}
+#mappa iframe {height: 100vh !important;}
+#mappa .ui-content {padding: 0 !important;}
+#mappa iframe {margin-top:-50px !important;}
+.ui-shadow-inset { box-shadow: none;}
+.myform .inp-form {
+
+}
+.myform .ui-input-text {
+    border:none;
+    border-bottom: 1px solid #1f4c59;
+    border-radius:0 !important;
+}
+.my-btn {
+    background-color: #ffb060 !important;
+    color:#fff !important;
+    text-shadow: 0 0px 0 #f3f3f3 !important;
+
+}
+.myform label {
+    font-size: 13px;
+}

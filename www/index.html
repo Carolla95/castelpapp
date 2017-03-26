@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="css/swipebox.min.css" rel="stylesheet" type="text/css"/>
+        <!--<link href="css/normalize.css" rel="stylesheet" type="text/css"/>-->
+
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
+        <link href="js/libs/jquery-mobile/jquery.mobile.structure-1.4.5.min.css" rel="stylesheet" type="text/css"/>
+        <link href="js/libs/jquery-mobile/jquery.mobile.icons-1.4.5.min.css" rel="stylesheet" type="text/css"/>
+        <link href="js/libs/jquery-mobile/jquery.mobile.theme-1.4.5.min.css" rel="stylesheet" type="text/css"/>
+        <link href="js/libs/jquery-mobile/jquery.mobile.icons.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/swiper.min.css" rel="stylesheet">
+        <link href="css/mystyle.css" rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+        <script src="js/libs/jquery/jquery-2.2.4.min.js" type="text/javascript"></script>
+        <script src="js/libs/jquery-mobile/jquery.mobile-1.4.5.min.js" type="text/javascript"></script>
+        <script src="cordova.js" type="text/javascript"></script>
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="js/index.js" type="text/javascript"></script>
+        <script src="js/jquery.swipebox.min.js" type="text/javascript"></script>
+        <script src="js/libs/ios-orientationchange-fix.js" type="text/javascript"></script>
+
+        <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBdACdo13gov-vI3T82NZQufIGE2W2PBAs&callback=initMap">
+        </script>
+        <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+        <script>
+                    // Initialize Firebase
+                    // TODO: Replace with your project's customized code snippet
+                    var config = {
+                        apiKey: "AIzaSyB_rqVt31HDNbpGPveUpcNQychlbMW_5U0",
+                        authDomain: "https://castelpagano-8cb2d.firebaseio.com/",
+                        databaseURL: "https://castelpagano-8cb2d.firebaseio.com/"
+                    };
+                    firebase.initializeApp(config);
+
+        </script>
+    </head>
+    <body>
+        <!--PAGINA HOME-->
+        <div data-role="page" id="home" class="page">
+            <div data-role="header" id="header">
+                <h1>BENVENUTI</h1>
+            </div>
+            <div data-role="main" class="ui-content" style="padding:0;" id="content-home">
+                <div class="home-top" style="background-image: url(img/homeslide-top.jpg); height: 150px; width: 100%; background-size: cover;background-position: center;"></div>
+                <div style="width: 100px; height: 100px; margin: 0 auto; display: block; margin-top: -50px; border-radius: 100px; background-color: #fff;">
+                    <img src="img/castelpagano.gif" style="width: 50px; margin: 0 auto; display: block; padding-top: 15px;">
+                </div>
+                <h2 style="text-align: center; color:#1f4c59;">COMUNE DI <br> CASTELPAGANO</h2>
+                <p style="padding: 10px; text-align: center;">Castelpagano paese a forte economia agricola, affonda le sue origini nel Medioevo, anche se alcuni ritrovamenti archeologici di età romana, fanno supporre l’esistenza in loco di un antico insediamento urbano. Lo stesso termine “pagus” (villaggio), di cui è composto il nome del paese, avvalorerebbe tale ipotesi. Sotto il dominio dei Longobardi, apparteneva al castaldato di Boiano-Campobasso.Nell’alto Medioevo passò sotto il dominio degli Angioini; fu poi feudo della famiglia De Balzo, dei Mormile e dei Coppola. Nel 1809 fece parte della provincia di Campobasso e dal 1861 fu aggregato alla provincia di Benevento. </p>
+                <section id="exemple" class="container">
+                    <div class="wrap small-width">
+                        <div id="try"></div>
+                        <ul id="box-container">
+                            <li class="box">
+                                <a href="img/castelpagano-home.jpg" class="swipebox" title="Fog">
+                                    <img src="img/castelpagano-home.jpg" alt="image">
+                                </a>
+                            </li>
+                            <li class="box">
+                                <a href="img/castelpagano1-home.jpg" class="swipebox" title="City">
+                                    <img src="img/castelpagano1-home.jpg" alt="image">
+                                </a>
+                            </li>
+                            <li class="box">
+                                <a href="img/castelpagano2-home.jpg" class="swipebox" title="Street">
+                                    <img src="img/castelpagano2-home.jpg" alt="image">
+                                </a>
+                            </li>
+                            <li class="box">
+                                <a href="img/castelpagano3-home.jpg" class="swipebox" title="Mustache Guy">
+                                    <img src="img/castelpagano3-home.jpg" alt="image">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <!-- Nav tabs --><div class="card">
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li role="presentation" class="active"><a href="#posizione" aria-controls="Posizione" role="tab" data-toggle="tab">Posizione</a></li>
+                                <li role="presentation"><a href="#storia" aria-controls="storia" role="tab" data-toggle="tab">Storia</a></li>
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active" id="posizione">Castelpagano si trova nella parte settentrionale della provincia di Benevento, nel cuore dell' antico Sanni posto a 600m di altitudine sul livello del mare, ai confini tra Campania, Molise e Puglia</div>
+                                <div role="tabpanel" class="tab-pane" id="storia">Secondo lo storico A. Iamalio l'appellativo di pagano gli sarà derivato da che esso dovette essere un avamposto pagano superstite in quella regione; ma nulla se ne sa prima dei normanni.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div> 
+        </div>
+
+        <!--PAGINA ALTRO-->
+        <div data-role="page" id="menu" data-role-transition="slideup" class="page">
+            <div data-role="header" id="header">
+                <h1>Altro</h1>
+            </div>
+            <div data-role="main" class="ui-content" id="back-contatti">
+                <ul class="list-group" >
+                    <li class="list-group-item"><a  href="#home" data-transition="slide">Comune di Castelpagano</a></li> 
+                    <li class="list-group-item"><a href="#mappa" data-transition="slide">Dove mi trovo</a></li> 
+                    <li class="list-group-item"><a href="#utili" data-transition="slide">Servizi utili</a></li>
+                    <li class="list-group-item"><a href="#contatti" data-transition="slide">Contatti</a></li>
+                    <li class="list-group-item"><a href="#preferiti" data-transition="slide">Preferiti</a></li> 
+                </ul>
+            </div>
+        </div> 
+
+
+        <!--PAGINA SERVIZI UTILI-->
+        <div data-role="page" id="utili" data-role-transition="slideup" class="page">
+            <div data-role="header" id="header">
+                <h1>SERVIZI UTILI</h1>
+            </div>
+            <div data-role="main" class="ui-content" id="">
+                <div class="media">
+                    <div class="media-left media-middle">
+                        <a>
+                            <img class="media-object" src="img/medico.svg" width="50" alt="...">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Guardia Medica</h4>
+                        <p>0824 935789 <br> Via Garibaldi 2</p>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="media-left media-middle">
+                        <a>
+                            <img class="media-object" src="img/farmacia.svg" width="50" alt="...">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Farmacia</h4>
+                        <p>numero <br> indirizzo</p>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="media-left media-middle">
+                        <a>
+                            <img class="media-object" src="img/carabinieri.svg" width="50" alt="...">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Carabinieri</h4>
+                        <p>numero <br> indirizzo</p>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="media-left media-middle">
+                        <a>
+                            <img class="media-object" src="img/biblioteca.svg" width="50" alt="...">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Biblioteca</h4>
+                        <p>numero <br> indirizzo</p>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="media-left media-middle">
+                        <a>
+                            <img class="media-object" src="img/posta.svg" width="50" alt="...">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Poste</h4>
+                        <p>numero <br> indirizzo</p>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="media-left media-middle">
+                        <a>
+                            <img class="media-object" src="img/banca.svg" width="50" alt="...">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Banca</h4>
+                        <p>numero <br> indirizzo</p>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="media-left media-middle">
+                        <a>
+                            <img class="media-object" src="img/chiesa.svg" width="50" alt="...">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Chiesa</h4>
+                        <p>numero <br> indirizzo</p>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+
+
+        <!--PAGINA MAPPA-->
+        <div data-role="page" id="mappa" data-role-transition="slideup"  class="page">
+            <div data-role="header" id="header" data-position="fixed" >
+                <h1>MAPPA</h1>
+            </div>
+            <div data-role="main" class="ui-content" id="">
+                <iframe src="https://www.google.com/maps/d/embed?mid=1b0ZmHgPioDc7-gthVASr5vE4Ofk&ll=41.4021019302564%2C14.80669131753541&z=17" width="100%" height="300px"></iframe>
+            </div>
+        </div> 
+
+        <!--PAGINA PREFERITI-->
+        <div data-role="page" id="preferiti" data-role-transition="slideup" class="page">
+            <div data-role="header" id="header">
+                <h1>PREFERITI</h1>
+            </div>
+            <div data-role="main" class="ui-content">
+                <div id="content-preferiti"></div>
+            </div>
+        </div> 
+
+        <!--PAGINA CONTATTI-->
+        <div data-role="page" id="contatti" data-role-transition="slideup" class="page">
+            <div data-role="header" id="header">
+                <h1>Contatti</h1>
+            </div>
+            <div class="banner-contatti">
+                <h1 style="text-align: center;">Comune di castelpagano</h1>
+                <p style="text-align: center;">
+                    <b style="margin-right: 10px;">Sindaco:  Michele Zeoli</b><br>
+                    <b style="margin-right: 10px;">Centralino: <a href="tel:#"> 0824 930072</a></b><br>
+                    <b style="margin-right: 10px;">Email:  <a href="mailto:#">castelpagano@gmail.com</a></b>
+
+                </p>
+            </div>
+            <div data-role="main" class="ui-content" id="">
+                <h2 style="text-align: center;">Se hai bisogno di informazioni non esitare a contattarci</h2>
+
+                <form method="post" class="my-form" id="salvaContatti">
+                    <div class="ui-field-contain myform">
+                        <label for="nome">Nome</label>
+                        <input class="inp-form" type="text" nome="nome" id="nome">
+                        <br>
+                        <label for="cognome">Cognome</label>
+                        <input class="inp-form" type="text" name="cognome" id="cognome">
+                        <br>
+                        <label for="email">Email</label>
+                        <input class="inp-form" type="email" id="email">
+                        <br>
+                        <label for="massaggio">Messaggio</label>
+                        <textarea class="inp-form" id="messaggio" name="messaggio"></textarea>
+                        <br>
+                        <input style="width: 100%;" type="submit" data-inline="true" value="CONTATTA" class="ui-btn my-btn">
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div> 
+
+        <!--PAGINA OSPITALITA-->
+        <div data-role="page" id="ospitalita" data-id="ospitalita" class="page">
+            <div data-role="header" id="header">
+                <h1>OSPITALITÀ</h1>
+            </div>
+            <div data-role="main" class="ui-content copertina">
+                <form>
+                    <input data-type="search" id="cerca-ospitalita" placeholder="Cosa ti interessa">
+                </form>
+                <div id="content-ospitalita" data-filter="true" data-input="#cerca-ospitalita">
+                </div>
+            </div>
+        </div> 
+
+        <!--PAGINA ITINERARI-->
+        <div data-role="page" id="itinerari" data-id="itinerari" class="page">
+            <div data-role="header" id="header">
+                <h1>ITINERARI</h1>
+            </div>
+            <div data-role="main" class="ui-content" id="">
+                <form>
+                    <input data-type="search" id="cerca-itinerari" placeholder="Cosa ti interessa">
+                </form>
+                <div id="content-itinerari" data-filter="true" data-input="#cerca-itinerari"></div>
+            </div> 
+        </div>
+
+        <!--PAGINA RISTORO-->
+        <div data-role="page" id="ristoro" data-id="ristoro" class="page">
+            <div data-role="header" id="header">
+                <h1>RISTORO</h1>
+            </div>
+            <div data-role="main" class="ui-content" id="">
+                <form>
+                    <input data-type="search" id="cerca-ristoro" placeholder="Cosa ti interessa">
+                </form>
+                <div id="content-ristoro" data-filter="true" data-input="#cerca-ristoro"></div>
+            </div>
+        </div> 
+
+
+        <div data-role="footer" class="nav-glyphish-example" data-position="fixed" data-tap-toggle="false" id="footer"> 
+            <div data-role="navbar" class="nav-glyphish-example" data-grid="c"> 
+                <ul> 
+                    <li><a style="border-bottom: 2px solid #00b39f;" href="#itinerari" data-transition="slide"><img src="img/itinerari.svg" width="22"><br></a></li> 
+                    <li><a style="border-bottom: 2px solid #ff5954;" href="#ospitalita" data-transition="slide"><img src="img/ospitalita.svg" width="22"><br></a></li> 
+                    <li><a style="border-bottom: 2px solid #ffb060;" href="#ristoro" data-transition="slide"><img src="img/ristoro.svg" width="22"><br></a></li> 
+                    <li><a style="border-bottom: 2px solid #1f4c59;" href="#menu" data-transition="slide"><img src="img/menu.svg" width="22"><br></a></li>  
+                </ul> 
+            </div> 
+        </div> 
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+
+                /* Basic Gallery */
+                $('.swipebox').swipebox();
+
+                /* Video */
+                $('.swipebox-video').swipebox();
+
+                /* Dynamic Gallery */
+                $('#gallery').click(function (e) {
+                    e.preventDefault();
+                    $.swipebox([
+                        {href: 'http://swipebox.csag.co/mages/image-1.jpg', title: 'My Caption'},
+                        {href: 'http://swipebox.csag.co/images/image-2.jpg', title: 'My Second Caption'}
+                    ]);
+                });
+
+            });
+
+            $(document).on("pageshow", function (e, data) {
+                $(".page").css("display", "none");
+                var idPagina = data.toPage[0].id;
+                //$(window).css("display", "none");
+                $.mobile.loading('show', {
+                    text: 'foo',
+                    textVisible: true,
+                    theme: 'z',
+                    html: "<img id='caricatore' src='img/57.gif'>"
+                });
+                $(document).load(function () {});
+                setTimeout(function () {
+                    $.mobile.loading('show');
+                    $("#" + idPagina).css("display", "block");
+
+                }, 1000);
+
+            });
+
+
+            $("#salvaContatti").submit(function (event) {
+                event.preventDefault();
+
+                var myObject = new Object();
+                myObject.nome = $("#nome").val();
+                myObject.cognome = $("#cognome").val();
+                myObject.email = $("#email").val();
+                myObject.messaggio = $("#messaggio").val();
+
+
+                var json = JSON.stringify(myObject);
+
+                $.ajax({
+                    url: "https://castelpagano-8cb2d.firebaseio.com/contatti.json",
+                    type: "POST",
+                    data: json
+                }).done(function () {
+                    alert("Messaggio Inviato!");
+                }).fail(function () {
+                    alert("Errore!");
+                });
+            });
+
+            //           $("#salvaContatti").submit(function (event) {
+            //               event.preventDefault();
+//                var json = JSON.stringify($(this).serializeArray());
+            //               $.ajax({
+            //                   url: "https://castelpagano-8cb2d.firebaseio.com/contatti.json",
+            //                   type: "POST",
+            //                   data: json
+            //              })
+            //                      .done(function () {
+            //                           alert("Messaggio inviato con successo!");
+            //                      })
+            //                       .fail(function () {
+            //                           alert("Errore!");
+            //                       });
+            //           });
+            //           $(document).on("pagecreate", "#home", function () {
+//
+
+            //               var wid = $(window).width();
+//alert(wid);
+            //               $("#mySwype").width(wid);
+            //           });
+
+
+
+        </script>
+    </body>
+</html>

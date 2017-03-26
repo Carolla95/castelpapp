@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.coolappz.Castelpagano" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <feature name="SplashScreen">
+        <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="Notification">
+        <param name="android-package" value="org.apache.cordova.dialogs.Notification" />
+    </feature>
+    <feature name="Globalization">
+        <param name="android-package" value="org.apache.cordova.globalization.Globalization" />
+    </feature>
+    <feature name="File">
+        <param name="android-package" value="org.apache.cordova.file.FileUtils" />
+        <param name="onload" value="true" />
+    </feature>
+    <allow-navigation href="cdvfile:*" />
+    <feature name="Media">
+        <param name="android-package" value="org.apache.cordova.media.AudioHandler" />
+    </feature>
+    <feature name="FileTransfer">
+        <param name="android-package" value="org.apache.cordova.filetransfer.FileTransfer" />
+    </feature>
+    <feature name="Capture">
+        <param name="android-package" value="org.apache.cordova.mediacapture.Capture" />
+    </feature>
+    <feature name="Compass">
+        <param name="android-package" value="org.apache.cordova.deviceorientation.CompassListener" />
+    </feature>
+    <feature name="Device">
+        <param name="android-package" value="org.apache.cordova.device.Device" />
+    </feature>
+    <feature name="Battery">
+        <param name="android-package" value="org.apache.cordova.batterystatus.BatteryListener" />
+    </feature>
+    <feature name="Camera">
+        <param name="android-package" value="org.apache.cordova.camera.CameraLauncher" />
+    </feature>
+    <feature name="Contacts">
+        <param name="android-package" value="org.apache.cordova.contacts.ContactManager" />
+    </feature>
+    <feature name="Accelerometer">
+        <param name="android-package" value="org.apache.cordova.devicemotion.AccelListener" />
+    </feature>
+    <feature name="Geolocation">
+        <param name="android-package" value="org.apache.cordova.geolocation.Geolocation" />
+    </feature>
+    <feature name="Vibration">
+        <param name="android-package" value="org.apache.cordova.vibration.Vibration" />
+    </feature>
+    <feature name="NetworkStatus">
+        <param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager" />
+    </feature>
+    <name>Castelpagano</name>
+    <description>
+        Castelpagano Turismo
+    </description>
+    <author email="giuseppe.c95@hotmail.it" href="http://cordova.io">
+        Carolla Giuseppe
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <allow-intent href="market:*" />
+    <icon density="ldpi" src="res/android/36.png" />
+    <icon density="mdpi" src="res/android/48.png" />
+    <icon density="hdpi" src="res/android/72.png" />
+    <icon density="xhdpi" src="res/android/96.png" />
+    <icon density="xxxhdpi" src="res/android/192.png" />
+    <icon density="ldpi" src="res/ios/36.png" />
+    <icon density="mdpi" src="res/ios/48.png" />
+    <icon density="hdpi" src="res/ios/72.png" />
+    <icon density="xhdpi" src="res/ios/96.png" />
+    <icon density="xxxhdpi" src="res/ios/192.png" />
+    <splash density="land-hdpi" src="res/screen/android/res-long-land-hdpi/default.png" />
+    <splash density="land-ldpi" src="res/screen/android/res-long-land-ldpi/default.png" />
+    <splash density="land-mdpi" src="res/screen/android/res-long-land-mdpi/default.png" />
+    <splash density="land-xhdpi" src="res/screen/android/res-long-land-xhdpi/default.png" />
+    <splash density="port-hdpi" src="res/screen/android/res-long-port-hdpi/default.png" />
+    <splash density="port-ldpi" src="res/screen/android/res-long-port-ldpi/default.png" />
+    <splash density="port-mdpi" src="res/screen/android/res-long-port-mdpi/default.png" />
+    <splash density="port-xhdpi" src="res/screen/android/res-long-port-xhdpi/default.png" />
+    <preference name="loglevel" value="DEBUG" />
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+</widget>

@@ -1,0 +1,70 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "it.giuseppe.PortfolioApp"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "it.giuseppe.PortfolioApp"
+        },
+        "cordova-plugin-globalization": {
+            "PACKAGE_NAME": "it.giuseppe.PortfolioApp"
+        },
+        "cordova-plugin-media": {
+            "PACKAGE_NAME": "it.giuseppe.PortfolioApp"
+        },
+        "cordova-plugin-file-transfer": {
+            "PACKAGE_NAME": "it.giuseppe.PortfolioApp"
+        },
+        "cordova-plugin-media-capture": {
+            "PACKAGE_NAME": "it.giuseppe.PortfolioApp"
+        },
+        "cordova-plugin-device-orientation": {
+            "PACKAGE_NAME": "it.giuseppe.PortfolioApp"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "it.giuseppe.PortfolioApp"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "it.giuseppe.PortfolioApp"
+        },
+        "cordova-plugin-battery-status": {
+            "PACKAGE_NAME": "it.giuseppe.PortfolioApp"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "it.giuseppe.PortfolioApp"
+        },
+        "cordova-plugin-contacts": {
+            "PACKAGE_NAME": "it.giuseppe.PortfolioApp"
+        },
+        "cordova-plugin-device-motion": {
+            "PACKAGE_NAME": "it.giuseppe.PortfolioApp"
+        },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "it.giuseppe.PortfolioApp"
+        },
+        "cordova-plugin-vibration": {
+            "PACKAGE_NAME": "it.giuseppe.PortfolioApp"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "it.giuseppe.PortfolioApp"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "it.giuseppe.PortfolioApp"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.coolappz.Castelpagano"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "it.giuseppe.PortfolioApp"
+        }
+    }
+}
